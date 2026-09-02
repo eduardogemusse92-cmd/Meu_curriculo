@@ -1,0 +1,23 @@
+/* responsivo.css — mobile-first */
+@media (min-width: 481px) and (max-width: 768px) {
+    .header-fixo { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+    .header-fixo h1 { margin: 0; }
+    .hero { padding: 1rem 0; }
+    .cartoes, .projetos, .cv-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (min-width: 769px) {
+    .header-fixo { display: flex; align-items: center; justify-content: space-between; gap: 2rem; }
+    .header-fixo h1 { margin: 0; }
+    main { padding-top: 3rem; }
+}
+
+@media (max-width: 480px) {
+    main { width: 94%; }
+    .header-fixo nav ul { flex-direction: column; }
+    .header-fixo nav a { display: block; }
+    .botao { width: 100%; text-align: center; }
+    .botao-secundario { margin: .4rem 0 0; }
+    table { font-size: .86rem; }
+    th, td { padding: .5rem; }
+}
